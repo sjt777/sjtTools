@@ -7,7 +7,7 @@
 //
 
 #import "BaseUIView.h"
-#import <objc/runtime.h>
+//#import <objc/runtime.h>
 @implementation BaseUIView
 
 -(void)setCornerRadius:(CGFloat)cornerRadius{
