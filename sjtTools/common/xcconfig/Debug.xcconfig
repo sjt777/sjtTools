@@ -1,0 +1,40 @@
+//
+//  Debug.xcconfig
+//  antQueen
+//
+//  Created by 寇广超 on 2019/4/29.
+//  Copyright © 2019 yibyi. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+OP_BASE_SERVER_ADDRESS = @"http:\/\/op.dev.51ruiheng.com\/"
+BASE_SERVER_ADDRESS  = @"http:\/\/devapi.51ruiheng.com\/"
+//ACTION_SCAR_BASE = @"http:\/\/car.51ruiheng.com:8066\/car"
+//OP_BASE_SERVER_ADDRESS = @"http:\/\/192.168.31.10:8082\/"
+ACTION_SCAR_BASE = @"http:\/\/47.96.173.12:8067\/car"
+
+CustomAppBundleld = com.ruiheng.antqueen
+CustomProductName = 蚂蚁女王-Debug
+
+#include "Common.xcconfig"
+//#ifdef DEBUG
+//#define BASE_SERVER_ADDRESS                 @"http://devapi.51ruiheng.com/"
+//#else
+//#define BASE_SERVER_ADDRESS                   @"https://api.51ruiheng.com/"
+//#endif
+//#ifdef DEBUG
+//#define OP_BASE_SERVER_ADDRESS                 @"http://op.dev.51ruiheng.com/"
+//#elif UTA
+//#define OP_BASE_SERVER_ADDRESS                 @"http://r.51ruiheng.com/"
+//#else
+//#define OP_BASE_SERVER_ADDRESS                   @"https://op.51ruiheng.com/"
+//#endif
+///**
+//java
+//**/
+//#ifdef DEBUG
+//#define ACTION_SCAR_BASE @"http://car.mayinvwang.com:8066/car"
+//#else
+//#define ACTION_SCAR_BASE                @"http://car.mayinvwang.com/car"
+//#endif

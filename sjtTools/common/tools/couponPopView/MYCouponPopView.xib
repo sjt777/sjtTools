@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UH5-ZM-ZrL" customClass="MYCouponPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-fi-oWz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.82745098039999998" green="0.16078431369999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdv-OP-d9U">
+                    <rect key="frame" x="60.5" y="154.5" width="254" height="358"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="358" id="Kgt-E7-v7m"/>
+                        <constraint firstAttribute="width" constant="254" id="uLZ-rx-mLu"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wS-uR-eZW">
+                    <rect key="frame" x="166.5" y="532.5" width="42" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="chacha">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelButtonClick:" destination="UH5-ZM-ZrL" eventType="touchUpInside" id="YCC-pf-9Vf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="EuV-fi-oWz" firstAttribute="leading" secondItem="UH5-ZM-ZrL" secondAttribute="leading" id="0pD-cn-tch"/>
+                <constraint firstItem="Mdv-OP-d9U" firstAttribute="centerY" secondItem="UH5-ZM-ZrL" secondAttribute="centerY" id="9PH-nf-S46"/>
+                <constraint firstAttribute="trailing" secondItem="EuV-fi-oWz" secondAttribute="trailing" id="SBb-av-xwh"/>
+                <constraint firstItem="2wS-uR-eZW" firstAttribute="centerX" secondItem="Mdv-OP-d9U" secondAttribute="centerX" id="dzT-g7-WM5"/>
+                <constraint firstAttribute="bottom" secondItem="EuV-fi-oWz" secondAttribute="bottom" id="m4X-9X-HPx"/>
+                <constraint firstItem="EuV-fi-oWz" firstAttribute="top" secondItem="UH5-ZM-ZrL" secondAttribute="top" id="pl2-SH-wrd"/>
+                <constraint firstItem="Mdv-OP-d9U" firstAttribute="centerX" secondItem="UH5-ZM-ZrL" secondAttribute="centerX" id="vho-BE-NAP"/>
+                <constraint firstItem="2wS-uR-eZW" firstAttribute="top" secondItem="Mdv-OP-d9U" secondAttribute="bottom" constant="20" id="wfX-Gd-lcP"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="EuV-fi-oWz" id="unv-t7-VYw"/>
+                <outlet property="cancelButton" destination="2wS-uR-eZW" id="pzq-wV-mfN"/>
+                <outlet property="centerView" destination="Mdv-OP-d9U" id="iId-LB-lzX"/>
+            </connections>
+            <point key="canvasLocation" x="-1832.8" y="49.925037481259373"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chacha" width="42" height="42"/>
+    </resources>
+</document>

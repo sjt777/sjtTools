@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cmn-Hans">
+    <meta charset="UTF-8">
+    <title>DSBridge Test</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no"/>
+    <!--require dsbridge init js-->
+    <script src="https://cdn.jsdelivr.net/npm/dsbridge/dist/dsbridge.js"> </script>
+</head>
+<style>
+    .btn {
+        text-align: center;
+        background: #eee;
+        color: #000;
+        padding: 20px;
+        margin: 30px;
+        font-size: 24px;
+        border-radius: 4px;
+        box-shadow: 4px 2px 10px #999;
+    }
+
+    .btn:active {
+        opacity: .7;
+        box-shadow: 4px 2px 10px #555;
+    }
+
+</style>
+<body>
+<div class="btn" onclick="callSyn()">车辆检测</div>
+<div class="btn" onclick="callSynSwift()">注册</div>
+<div class="btn" onclick="callSynWb()">查维保</div>
+<div class="btn" onclick="callSynPz()">查碰撞</div>
+<div class="btn" onclick="callSynPubWholseCar()">发布批发车源</div>
+<div class="btn" onclick="callSynAntPoupon()">蚂蚁券</div>
+<div class="btn" onclick="callSynDealer()">车商认证</div>
+<div class="btn" onclick="callSynRecharge()">充值</div>
+<div class="btn" onclick="callSynCarDetail()">车辆详情</div>
+<div class="btn" onclick="callSynPubRetailCar()">发布零售车源</div>
+<div class="btn" onclick="callSynShareAlert()">分享弹窗</div>
+
+
+<div class="btn" onclick="callSynQq()">qq</div>
+<div class="btn" onclick="callSynWx()">wx</div>
+<div class="btn" onclick="callSynPy()">py</div>
+
+
+<script>
+
+    function callSyn() {
+        //dsBridge.call("gotoCarDetectionVc", "车辆检测",function(v){alert(v)})
+        //dsBridge.call("gotoCarDetectionVc", "车辆检测")
+        alert(dsBridge.call("gotoCarDetectionVc", "车辆检测"))
+    }
+    function callSynPz(){
+        dsBridge.call("checkInsurance", "查碰撞")
+    }
+    function callSynWb(){
+        dsBridge.call("checkMaintenance", "查维保")
+    }
+    function callSynSwift() {
+        dsBridge.call("gotoRegisterVc", "注册")
+    }
+    function callSynPubWholseCar() {
+        dsBridge.call("gotoPubWholseCarVc", "发布批发车源")
+    }
+    function callSynAntPoupon() {
+        dsBridge.call("gotoAntCouponVc", "蚂蚁券")
+    }
+    function callSynDealer() {
+        dsBridge.call("gotoDealerVc", "车商认证")
+    }
+    function callSynRecharge() {
+        dsBridge.call("gotoRechargeVc", "充值")
+    }
+    function callSynCarDetail() {
+        dsBridge.call("gotoCarDetailVc", "车辆的token")
+    }
+    function callSynPubRetailCar() {
+        dsBridge.call("gotoPubRetailCarVc", "发布零售车源")
+    }
+    function callSynShareAlert() {
+        dsBridge.call("shareParames", {title:"qqTest", content:"测试获取分享参数", shareUrl:"https://www.baidu.com"})
+    }
+
+    function callSynQq() {
+        dsBridge.call("qqShare", {title:"qqTest", content:"测试获取分享参数", shareUrl:"https://www.baidu.com"})
+    }
+    function callSynWx() {
+        dsBridge.call("wxShare", {title:"wxTest", content:"测试获取分享参数", shareUrl:"https://www.baidu.com"})
+    }
+    function callSynPy() {
+        dsBridge.call("pyShare", {title:"pyTest", content:"测试获取分享参数", shareUrl:"https://www.baidu.com"})
+    }
+    // 获取分享参数
+    dsBridge.register('shareParames', function () {
+        return  {title:"test", content:"测试获取分享参数", shareUrl:"https://www.baidu.com"};
+    })
+
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+//
+//  Relase.xcconfig
+//  antQueen
+//
+//  Created by 寇广超 on 2019/4/29.
+//  Copyright © 2019 yibyi. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+OP_BASE_SERVER_ADDRESS = @"https:\/\/op.51ruiheng.com\/"
+BASE_SERVER_ADDRESS  = @"https:\/\/api.51ruiheng.com\/"
+ACTION_SCAR_BASE = @"http:\/\/car.51ruiheng.com\/car"
+CustomAppBundleld = com.ruiheng.antqueen
+CustomProductName = 蚂蚁女王
+
+#include "Common.xcconfig"
+

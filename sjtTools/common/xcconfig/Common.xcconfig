@@ -1,0 +1,13 @@
+//
+//  Common.xcconfig
+//  antQueen
+//
+//  Created by 寇广超 on 2019/4/29.
+//  Copyright © 2019 yibyi. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) OP_BASE_SERVER_ADDRESS='$(OP_BASE_SERVER_ADDRESS)' BASE_SERVER_ADDRESS='$(BASE_SERVER_ADDRESS)' ACTION_SCAR_BASE='$(ACTION_SCAR_BASE)' CustomProductName='$(CustomProductName)' CustomAppBundleld='$(CustomAppBundleld)'
+
+

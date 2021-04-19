@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jd8-CA-wzG" customClass="MYCustomAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSk-Un-ZFv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.82745098039999998" green="0.16078431369999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqm-Mk-yVb">
+                    <rect key="frame" x="53" y="388.5" width="308" height="119"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测费用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVV-Yn-Wsd">
+                            <rect key="frame" x="119" y="20" width="70" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测费用每次延保服务一次性收取500元，如果延保失败或订单被取消，检测费用会返还至您的账户" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Td-zv-fuR">
+                            <rect key="frame" x="15" y="52" width="278" height="47"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.80243177816901412" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="nVV-Yn-Wsd" firstAttribute="centerX" secondItem="kqm-Mk-yVb" secondAttribute="centerX" id="6cd-Cc-jeK"/>
+                        <constraint firstItem="nVV-Yn-Wsd" firstAttribute="top" secondItem="kqm-Mk-yVb" secondAttribute="top" constant="20" id="AJd-cf-Wrw"/>
+                        <constraint firstAttribute="bottom" secondItem="6Td-zv-fuR" secondAttribute="bottom" constant="20" id="VRu-YJ-JdA"/>
+                        <constraint firstItem="6Td-zv-fuR" firstAttribute="top" secondItem="nVV-Yn-Wsd" secondAttribute="bottom" constant="11" id="gkZ-rn-czn"/>
+                        <constraint firstAttribute="trailing" secondItem="6Td-zv-fuR" secondAttribute="trailing" constant="15" id="jff-Kf-smf"/>
+                        <constraint firstItem="6Td-zv-fuR" firstAttribute="leading" secondItem="kqm-Mk-yVb" secondAttribute="leading" constant="15" id="nkZ-Rp-H7y"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qka-MN-hCR">
+                    <rect key="frame" x="186" y="781" width="42" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="chacha">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelClick:" destination="jd8-CA-wzG" eventType="touchUpInside" id="uOm-DG-r6m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="tSk-Un-ZFv" firstAttribute="top" secondItem="jd8-CA-wzG" secondAttribute="top" id="249-bQ-xLD"/>
+                <constraint firstItem="kqm-Mk-yVb" firstAttribute="centerY" secondItem="jd8-CA-wzG" secondAttribute="centerY" id="6xv-vX-gIR"/>
+                <constraint firstAttribute="bottom" secondItem="Qka-MN-hCR" secondAttribute="bottom" constant="73" id="Ytz-QX-C9N"/>
+                <constraint firstItem="tSk-Un-ZFv" firstAttribute="leading" secondItem="jd8-CA-wzG" secondAttribute="leading" id="d4A-tc-fy4"/>
+                <constraint firstAttribute="bottom" secondItem="tSk-Un-ZFv" secondAttribute="bottom" id="eYS-Kh-Wn6"/>
+                <constraint firstItem="kqm-Mk-yVb" firstAttribute="leading" secondItem="jd8-CA-wzG" secondAttribute="leading" constant="53" id="or8-pH-5Qe"/>
+                <constraint firstItem="Qka-MN-hCR" firstAttribute="centerX" secondItem="kqm-Mk-yVb" secondAttribute="centerX" id="s6N-me-S30"/>
+                <constraint firstAttribute="trailing" secondItem="kqm-Mk-yVb" secondAttribute="trailing" constant="53" id="v1x-5s-gkL"/>
+                <constraint firstAttribute="trailing" secondItem="tSk-Un-ZFv" secondAttribute="trailing" id="y5d-Hz-V9P"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="tSk-Un-ZFv" id="6mZ-5s-Tm0"/>
+                <outlet property="cancelButton" destination="Qka-MN-hCR" id="yCE-Gx-KXd"/>
+                <outlet property="centerView" destination="kqm-Mk-yVb" id="bwg-gn-txj"/>
+                <outlet property="contentLb" destination="6Td-zv-fuR" id="Ubh-RB-EQG"/>
+                <outlet property="titleLb" destination="nVV-Yn-Wsd" id="2U2-pp-EL5"/>
+            </connections>
+            <point key="canvasLocation" x="-2728" y="60"/>
+        </view>
+        <view contentMode="scaleToFill" id="9Sb-tp-LUo" customClass="MYSyAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGQ-bM-fyw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                            <color key="value" red="0.82745098039999998" green="0.16078431369999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqN-hl-1oD">
+                    <rect key="frame" x="53" y="333" width="308" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测费用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4a-ah-xYb">
+                            <rect key="frame" x="119" y="20" width="70" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.01176470588" green="0.01176470588" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测费用每次延保服务一次性收取500元，如果延保失败或订单被取消，检测费用会返还至您的账户" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w2-aN-bO6">
+                            <rect key="frame" x="15" y="52" width="278" height="47"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.01176470588" green="0.01176470588" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-qU-TQQ">
+                            <rect key="frame" x="0.0" y="186" width="308" height="1"/>
+                            <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="0.14582416373239437" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="jj3-dW-4ie"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VG0-NF-aOm">
+                            <rect key="frame" x="153.5" y="187" width="1" height="43"/>
+                            <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="0.15154599475492952" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="LQo-M7-4af"/>
+                                <constraint firstAttribute="height" constant="43" id="zsC-12-gOW"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-rD-c9b">
+                            <rect key="frame" x="154.5" y="187" width="153.5" height="43"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmClick:" destination="9Sb-tp-LUo" eventType="touchUpInside" id="GMn-GC-6Is"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2A-Ii-sbj">
+                            <rect key="frame" x="0.0" y="187" width="153.5" height="43"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelClick:" destination="9Sb-tp-LUo" eventType="touchUpInside" id="Lrw-eR-oYL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHL-8e-C90">
+                            <rect key="frame" x="15" y="119" width="278" height="47"/>
+                            <attributedString key="attributedText">
+                                <fragment content="检测费用每次延保服务一次性收取500元，如果延保失败或订单被取消，检测费用会返还至您的账户">
+                                    <attributes>
+                                        <color key="NSColor" red="0.01176470588" green="0.01176470588" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="system"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="0.796875" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="f2A-Ii-sbj" secondAttribute="bottom" id="35H-UC-raI"/>
+                        <constraint firstItem="hHL-8e-C90" firstAttribute="top" secondItem="7w2-aN-bO6" secondAttribute="bottom" constant="20" id="3Mg-M1-ZAX"/>
+                        <constraint firstAttribute="trailing" secondItem="ava-rD-c9b" secondAttribute="trailing" id="3UW-sT-95W"/>
+                        <constraint firstItem="I4a-ah-xYb" firstAttribute="centerX" secondItem="OqN-hl-1oD" secondAttribute="centerX" id="4Jb-vP-aJo"/>
+                        <constraint firstItem="ava-rD-c9b" firstAttribute="top" secondItem="JQb-qU-TQQ" secondAttribute="bottom" id="5Ur-Ca-HgV"/>
+                        <constraint firstAttribute="trailing" secondItem="JQb-qU-TQQ" secondAttribute="trailing" id="Am2-fS-3Rd"/>
+                        <constraint firstAttribute="bottom" secondItem="VG0-NF-aOm" secondAttribute="bottom" id="D2m-8w-oCT"/>
+                        <constraint firstItem="I4a-ah-xYb" firstAttribute="top" secondItem="OqN-hl-1oD" secondAttribute="top" constant="20" id="Dc5-j7-wN5"/>
+                        <constraint firstItem="VG0-NF-aOm" firstAttribute="top" secondItem="JQb-qU-TQQ" secondAttribute="bottom" id="F7t-DP-hTM"/>
+                        <constraint firstItem="JQb-qU-TQQ" firstAttribute="top" secondItem="hHL-8e-C90" secondAttribute="bottom" constant="20" id="GsC-Iz-Ff1"/>
+                        <constraint firstAttribute="trailing" secondItem="hHL-8e-C90" secondAttribute="trailing" constant="15" id="J6s-5u-OkY"/>
+                        <constraint firstItem="7w2-aN-bO6" firstAttribute="leading" secondItem="OqN-hl-1oD" secondAttribute="leading" constant="15" id="M8i-us-PIj"/>
+                        <constraint firstItem="f2A-Ii-sbj" firstAttribute="top" secondItem="JQb-qU-TQQ" secondAttribute="bottom" id="N4N-sG-QoK"/>
+                        <constraint firstItem="VG0-NF-aOm" firstAttribute="centerX" secondItem="OqN-hl-1oD" secondAttribute="centerX" id="T67-zb-WMI"/>
+                        <constraint firstItem="7w2-aN-bO6" firstAttribute="top" secondItem="I4a-ah-xYb" secondAttribute="bottom" constant="11" id="dAB-KU-tGt"/>
+                        <constraint firstAttribute="bottom" secondItem="ava-rD-c9b" secondAttribute="bottom" id="dkJ-s0-lvX"/>
+                        <constraint firstItem="f2A-Ii-sbj" firstAttribute="leading" secondItem="OqN-hl-1oD" secondAttribute="leading" id="k7J-db-GxG"/>
+                        <constraint firstItem="ava-rD-c9b" firstAttribute="leading" secondItem="VG0-NF-aOm" secondAttribute="trailing" id="p7C-s1-i1f"/>
+                        <constraint firstItem="VG0-NF-aOm" firstAttribute="leading" secondItem="f2A-Ii-sbj" secondAttribute="trailing" id="sVv-FM-TVx"/>
+                        <constraint firstAttribute="trailing" secondItem="7w2-aN-bO6" secondAttribute="trailing" constant="15" id="tIq-K7-56c"/>
+                        <constraint firstItem="JQb-qU-TQQ" firstAttribute="leading" secondItem="OqN-hl-1oD" secondAttribute="leading" id="wgh-ao-sLC"/>
+                        <constraint firstItem="hHL-8e-C90" firstAttribute="leading" secondItem="OqN-hl-1oD" secondAttribute="leading" constant="15" id="yGm-SD-bjf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="OqN-hl-1oD" firstAttribute="leading" secondItem="9Sb-tp-LUo" secondAttribute="leading" constant="53" id="GvC-s9-DGZ"/>
+                <constraint firstAttribute="trailing" secondItem="OqN-hl-1oD" secondAttribute="trailing" constant="53" id="YSj-hM-KbY"/>
+                <constraint firstItem="OqN-hl-1oD" firstAttribute="centerY" secondItem="9Sb-tp-LUo" secondAttribute="centerY" id="mOh-ZH-qF5"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="BGQ-bM-fyw" id="YBN-4J-VvG"/>
+                <outlet property="centerView" destination="OqN-hl-1oD" id="LpG-ZL-GCT"/>
+                <outlet property="confirmButton" destination="ava-rD-c9b" id="ZkN-p8-Yh1"/>
+                <outlet property="contentLb" destination="7w2-aN-bO6" id="e2h-9k-91P"/>
+                <outlet property="explainLb" destination="hHL-8e-C90" id="9Ti-6c-1ej"/>
+                <outlet property="titleLb" destination="I4a-ah-xYb" id="JM7-6v-Hy9"/>
+            </connections>
+            <point key="canvasLocation" x="-1552.1739130434785" y="59.598214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chacha" width="42" height="42"/>
+    </resources>
+</document>
